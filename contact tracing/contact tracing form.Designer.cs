@@ -50,12 +50,14 @@
             this.lbl__address = new System.Windows.Forms.Label();
             this.tbox__address = new System.Windows.Forms.TextBox();
             this.btn__submit = new System.Windows.Forms.Button();
+            this.calendar__dateselect = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(31)))), ((int)(((byte)(101)))));
+            this.panel1.Controls.Add(this.calendar__dateselect);
             this.panel1.Controls.Add(this.lbl__contacttracingform);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -270,6 +272,15 @@
             this.btn__submit.UseVisualStyleBackColor = false;
             this.btn__submit.Click += new System.EventHandler(this.button1_Click);
             // 
+            // calendar__dateselect
+            // 
+            this.calendar__dateselect.CalendarFont = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar__dateselect.Font = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar__dateselect.Location = new System.Drawing.Point(982, 21);
+            this.calendar__dateselect.Name = "calendar__dateselect";
+            this.calendar__dateselect.Size = new System.Drawing.Size(232, 28);
+            this.calendar__dateselect.TabIndex = 29;
+            // 
             // form__contacttracingform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -331,5 +342,6 @@
         private System.Windows.Forms.Label lbl__address;
         private System.Windows.Forms.TextBox tbox__address;
         private System.Windows.Forms.Button btn__submit;
+        private System.Windows.Forms.DateTimePicker calendar__dateselect;
     }
 }

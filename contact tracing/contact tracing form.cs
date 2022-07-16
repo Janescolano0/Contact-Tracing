@@ -25,6 +25,8 @@ namespace contact_tracing
             file.WriteLine("");
             file.WriteLine("Personal Details");
             file.WriteLine("");
+            file.WriteLine("Date: " + calendar__dateselect.Text);
+            file.WriteLine("");
             file.WriteLine("First Name: " + tbox__first.Text);
             file.WriteLine("Middle Name: " + tbox__middle.Text);
             file.WriteLine("Last Name: " + tbox__last.Text);
