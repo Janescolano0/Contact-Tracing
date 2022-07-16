@@ -49,7 +49,7 @@
             this.tbox__email = new System.Windows.Forms.TextBox();
             this.lbl__address = new System.Windows.Forms.Label();
             this.tbox__address = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn__submit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -257,17 +257,18 @@
             this.tbox__address.Size = new System.Drawing.Size(456, 20);
             this.tbox__address.TabIndex = 27;
             // 
-            // button1
+            // btn__submit
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.button1.Font = new System.Drawing.Font("Oswald", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.button1.Location = new System.Drawing.Point(1038, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 60);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn__submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.btn__submit.Font = new System.Drawing.Font("Oswald", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.btn__submit.Location = new System.Drawing.Point(1038, 119);
+            this.btn__submit.Name = "btn__submit";
+            this.btn__submit.Size = new System.Drawing.Size(150, 60);
+            this.btn__submit.TabIndex = 28;
+            this.btn__submit.Text = "Submit";
+            this.btn__submit.UseVisualStyleBackColor = false;
+            this.btn__submit.Click += new System.EventHandler(this.button1_Click);
             // 
             // form__contacttracingform
             // 
@@ -275,7 +276,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(1240, 388);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn__submit);
             this.Controls.Add(this.tbox__address);
             this.Controls.Add(this.lbl__address);
             this.Controls.Add(this.tbox__email);
@@ -329,6 +330,6 @@
         private System.Windows.Forms.TextBox tbox__email;
         private System.Windows.Forms.Label lbl__address;
         private System.Windows.Forms.TextBox tbox__address;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn__submit;
     }
 }

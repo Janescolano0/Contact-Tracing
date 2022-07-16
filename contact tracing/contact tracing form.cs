@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,29 @@ namespace contact_tracing
         public form__contacttracingform()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StreamWriter file = new StreamWriter(@"C:\Users\joy\source\repos\contact tracing\data\" + tbox__last.Text + ", " + tbox__first.Text + ", " + tbox__middle.Text + ".txt", true);
+
+            file.WriteLine("");
+            file.WriteLine("Personal Details");
+            file.WriteLine("");
+            file.WriteLine("First Name: " + tbox__first.Text);
+            file.WriteLine("Middle Name: " + tbox__middle.Text);
+            file.WriteLine("Last Name: " + tbox__last.Text);
+            file.WriteLine("Age: " + tbox__age.Text);
+            file.WriteLine("Date of Birth: " + tbox__birth.Text);
+            file.WriteLine("Gender: " + tbox__gender.Text);
+            file.WriteLine("Contact Info: " + tbox__contact.Text);
+            file.WriteLine("Email: " + tbox__email.Text);
+            file.WriteLine("Address: " + tbox__address.Text);
+            
+            file.Close();
+
+            MessageBox.Show("Thanks for filling out the form!", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Always wear your facemask. Be careful. ", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
