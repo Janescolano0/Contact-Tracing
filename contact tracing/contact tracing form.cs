@@ -18,6 +18,23 @@ namespace contact_tracing
             InitializeComponent();
         }
 
+        private void ClearTextBoxes()
+        {
+            Action < Control.ControlCollection > func = null;
+            func = (controls) =>
+
+                {
+                    foreach (Control control in controls)
+                        if (control is TextBox)
+                            (control as TextBox).Clear();
+                        else
+                            func(control.Controls);
+                };
+
+            func(Controls);
+
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             StreamWriter file = new StreamWriter(@"C:\Users\joy\source\repos\contact tracing\data\" + tbox__last.Text + ", " + tbox__first.Text + ", " + tbox__middle.Text + ".txt", true);
@@ -45,7 +62,9 @@ namespace contact_tracing
 
         private void btn__clear_Click(object sender, EventArgs e)
         {
-
+            ClearTextBoxes();
         }
+
+
     }
 }
