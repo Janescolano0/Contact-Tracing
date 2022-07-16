@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace contact_tracing
 {
-    public partial class contact_tracing_form : Form
+    public partial class form__contacttracingform : Form
     {
-        public contact_tracing_form()
+        public form__contacttracingform()
         {
             InitializeComponent();
         }
