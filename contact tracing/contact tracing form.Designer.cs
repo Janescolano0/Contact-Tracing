@@ -51,6 +51,7 @@
             this.tbox__address = new System.Windows.Forms.TextBox();
             this.btn__submit = new System.Windows.Forms.Button();
             this.calendar__dateselect = new System.Windows.Forms.DateTimePicker();
+            this.btn__clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -281,12 +282,26 @@
             this.calendar__dateselect.Size = new System.Drawing.Size(232, 28);
             this.calendar__dateselect.TabIndex = 29;
             // 
+            // btn__clear
+            // 
+            this.btn__clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.btn__clear.Font = new System.Drawing.Font("Oswald", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__clear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.btn__clear.Location = new System.Drawing.Point(1038, 193);
+            this.btn__clear.Name = "btn__clear";
+            this.btn__clear.Size = new System.Drawing.Size(150, 60);
+            this.btn__clear.TabIndex = 29;
+            this.btn__clear.Text = "Clear";
+            this.btn__clear.UseVisualStyleBackColor = false;
+            this.btn__clear.Click += new System.EventHandler(this.btn__clear_Click);
+            // 
             // form__contacttracingform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(1240, 388);
+            this.Controls.Add(this.btn__clear);
             this.Controls.Add(this.btn__submit);
             this.Controls.Add(this.tbox__address);
             this.Controls.Add(this.lbl__address);
@@ -343,5 +358,6 @@
         private System.Windows.Forms.TextBox tbox__address;
         private System.Windows.Forms.Button btn__submit;
         private System.Windows.Forms.DateTimePicker calendar__dateselect;
+        private System.Windows.Forms.Button btn__clear;
     }
 }

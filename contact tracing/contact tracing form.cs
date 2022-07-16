@@ -42,5 +42,10 @@ namespace contact_tracing
             MessageBox.Show("Thanks for filling out the form!", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
             MessageBox.Show("Always wear your facemask. Be careful. ", "Contact Tracing", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btn__clear_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
