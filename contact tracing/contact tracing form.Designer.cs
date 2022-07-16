@@ -49,6 +49,7 @@
             this.tbox__email = new System.Windows.Forms.TextBox();
             this.lbl__address = new System.Windows.Forms.Label();
             this.tbox__address = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +68,7 @@
             // 
             this.lbl__contacttracingform.AutoSize = true;
             this.lbl__contacttracingform.Font = new System.Drawing.Font("Oswald", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__contacttracingform.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__contacttracingform.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__contacttracingform.Location = new System.Drawing.Point(3, 5);
             this.lbl__contacttracingform.Name = "lbl__contacttracingform";
             this.lbl__contacttracingform.Size = new System.Drawing.Size(601, 87);
@@ -78,7 +79,7 @@
             // 
             this.lbl__personaldeets.AutoSize = true;
             this.lbl__personaldeets.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__personaldeets.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__personaldeets.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__personaldeets.Location = new System.Drawing.Point(29, 119);
             this.lbl__personaldeets.Name = "lbl__personaldeets";
             this.lbl__personaldeets.Size = new System.Drawing.Size(211, 40);
@@ -89,7 +90,7 @@
             // 
             this.lbl__last.AutoSize = true;
             this.lbl__last.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__last.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__last.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__last.Location = new System.Drawing.Point(40, 269);
             this.lbl__last.Name = "lbl__last";
             this.lbl__last.Size = new System.Drawing.Size(79, 21);
@@ -100,7 +101,7 @@
             // 
             this.lbl__middle.AutoSize = true;
             this.lbl__middle.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__middle.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__middle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__middle.Location = new System.Drawing.Point(40, 226);
             this.lbl__middle.Name = "lbl__middle";
             this.lbl__middle.Size = new System.Drawing.Size(94, 21);
@@ -109,6 +110,7 @@
             // 
             // tbox__middle
             // 
+            this.tbox__middle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__middle.Location = new System.Drawing.Point(140, 227);
             this.tbox__middle.Name = "tbox__middle";
             this.tbox__middle.Size = new System.Drawing.Size(153, 20);
@@ -116,6 +118,7 @@
             // 
             // tbox__last
             // 
+            this.tbox__last.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__last.Location = new System.Drawing.Point(140, 272);
             this.tbox__last.Name = "tbox__last";
             this.tbox__last.Size = new System.Drawing.Size(153, 20);
@@ -125,7 +128,7 @@
             // 
             this.lbl__first.AutoSize = true;
             this.lbl__first.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__first.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__first.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__first.Location = new System.Drawing.Point(40, 183);
             this.lbl__first.Name = "lbl__first";
             this.lbl__first.Size = new System.Drawing.Size(81, 21);
@@ -134,6 +137,7 @@
             // 
             // tbox__first
             // 
+            this.tbox__first.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__first.Location = new System.Drawing.Point(140, 183);
             this.tbox__first.Name = "tbox__first";
             this.tbox__first.Size = new System.Drawing.Size(153, 20);
@@ -143,7 +147,7 @@
             // 
             this.lbl__age.AutoSize = true;
             this.lbl__age.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__age.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__age.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__age.Location = new System.Drawing.Point(331, 180);
             this.lbl__age.Name = "lbl__age";
             this.lbl__age.Size = new System.Drawing.Size(35, 21);
@@ -154,7 +158,7 @@
             // 
             this.lbl__birth.AutoSize = true;
             this.lbl__birth.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__birth.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__birth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__birth.Location = new System.Drawing.Point(331, 226);
             this.lbl__birth.Name = "lbl__birth";
             this.lbl__birth.Size = new System.Drawing.Size(95, 21);
@@ -165,7 +169,7 @@
             // 
             this.lbl__gender.AutoSize = true;
             this.lbl__gender.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__gender.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__gender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__gender.Location = new System.Drawing.Point(331, 272);
             this.lbl__gender.Name = "lbl__gender";
             this.lbl__gender.Size = new System.Drawing.Size(57, 21);
@@ -174,6 +178,7 @@
             // 
             // tbox__age
             // 
+            this.tbox__age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__age.Location = new System.Drawing.Point(437, 180);
             this.tbox__age.Name = "tbox__age";
             this.tbox__age.Size = new System.Drawing.Size(40, 20);
@@ -181,6 +186,7 @@
             // 
             // tbox__birth
             // 
+            this.tbox__birth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__birth.Location = new System.Drawing.Point(437, 226);
             this.tbox__birth.Name = "tbox__birth";
             this.tbox__birth.Size = new System.Drawing.Size(120, 20);
@@ -188,6 +194,7 @@
             // 
             // tbox__gender
             // 
+            this.tbox__gender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__gender.Location = new System.Drawing.Point(437, 272);
             this.tbox__gender.Name = "tbox__gender";
             this.tbox__gender.Size = new System.Drawing.Size(67, 20);
@@ -197,7 +204,7 @@
             // 
             this.lbl__contact.AutoSize = true;
             this.lbl__contact.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__contact.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__contact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__contact.Location = new System.Drawing.Point(645, 183);
             this.lbl__contact.Name = "lbl__contact";
             this.lbl__contact.Size = new System.Drawing.Size(92, 21);
@@ -208,7 +215,7 @@
             // 
             this.lbl__email.AutoSize = true;
             this.lbl__email.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__email.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__email.Location = new System.Drawing.Point(645, 224);
             this.lbl__email.Name = "lbl__email";
             this.lbl__email.Size = new System.Drawing.Size(45, 21);
@@ -217,6 +224,7 @@
             // 
             // tbox__contact
             // 
+            this.tbox__contact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__contact.Location = new System.Drawing.Point(743, 183);
             this.tbox__contact.Name = "tbox__contact";
             this.tbox__contact.Size = new System.Drawing.Size(159, 20);
@@ -224,6 +232,7 @@
             // 
             // tbox__email
             // 
+            this.tbox__email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__email.Location = new System.Drawing.Point(743, 224);
             this.tbox__email.Name = "tbox__email";
             this.tbox__email.Size = new System.Drawing.Size(228, 20);
@@ -233,7 +242,7 @@
             // 
             this.lbl__address.AutoSize = true;
             this.lbl__address.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__address.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__address.Location = new System.Drawing.Point(645, 268);
             this.lbl__address.Name = "lbl__address";
             this.lbl__address.Size = new System.Drawing.Size(63, 21);
@@ -242,10 +251,23 @@
             // 
             // tbox__address
             // 
+            this.tbox__address.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
             this.tbox__address.Location = new System.Drawing.Point(743, 269);
             this.tbox__address.Name = "tbox__address";
             this.tbox__address.Size = new System.Drawing.Size(456, 20);
             this.tbox__address.TabIndex = 27;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.button1.Font = new System.Drawing.Font("Oswald", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.button1.Location = new System.Drawing.Point(1038, 119);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 60);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Submit";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // form__contacttracingform
             // 
@@ -253,6 +275,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(1240, 388);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tbox__address);
             this.Controls.Add(this.lbl__address);
             this.Controls.Add(this.tbox__email);
@@ -274,6 +297,7 @@
             this.Controls.Add(this.tbox__first);
             this.Controls.Add(this.panel1);
             this.Name = "form__contacttracingform";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Form";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -305,5 +329,6 @@
         private System.Windows.Forms.TextBox tbox__email;
         private System.Windows.Forms.Label lbl__address;
         private System.Windows.Forms.TextBox tbox__address;
+        private System.Windows.Forms.Button button1;
     }
 }

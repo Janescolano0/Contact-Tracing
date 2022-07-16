@@ -1,0 +1,12 @@
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\contact tracing.exe.config
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\contact tracing.exe
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\contact tracing.pdb
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.AssemblyReference.cache
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.SuggestedBindingRedirects.cache
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__contacttracingform.resources
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__contacttracing.resources
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.Properties.Resources.resources
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.GenerateResource.cache
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.CoreCompileInputs.cache
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.exe
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.pdb
