@@ -52,12 +52,14 @@
             this.btn__submit = new System.Windows.Forms.Button();
             this.calendar__dateselect = new System.Windows.Forms.DateTimePicker();
             this.btn__clear = new System.Windows.Forms.Button();
+            this.btn__admin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(31)))), ((int)(((byte)(101)))));
+            this.panel1.Controls.Add(this.btn__admin);
             this.panel1.Controls.Add(this.calendar__dateselect);
             this.panel1.Controls.Add(this.lbl__contacttracingform);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -277,7 +279,7 @@
             // 
             this.calendar__dateselect.CalendarFont = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.calendar__dateselect.Font = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendar__dateselect.Location = new System.Drawing.Point(982, 21);
+            this.calendar__dateselect.Location = new System.Drawing.Point(834, 33);
             this.calendar__dateselect.Name = "calendar__dateselect";
             this.calendar__dateselect.Size = new System.Drawing.Size(232, 28);
             this.calendar__dateselect.TabIndex = 29;
@@ -295,12 +297,25 @@
             this.btn__clear.UseVisualStyleBackColor = false;
             this.btn__clear.Click += new System.EventHandler(this.btn__clear_Click);
             // 
+            // btn__admin
+            // 
+            this.btn__admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.btn__admin.Font = new System.Drawing.Font("Oswald", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.btn__admin.Location = new System.Drawing.Point(1095, 5);
+            this.btn__admin.Name = "btn__admin";
+            this.btn__admin.Size = new System.Drawing.Size(133, 92);
+            this.btn__admin.TabIndex = 30;
+            this.btn__admin.Text = "ADMIN";
+            this.btn__admin.UseVisualStyleBackColor = false;
+            this.btn__admin.Click += new System.EventHandler(this.btn__admin_Click);
+            // 
             // form__contacttracingform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(1240, 388);
+            this.ClientSize = new System.Drawing.Size(1240, 355);
             this.Controls.Add(this.btn__clear);
             this.Controls.Add(this.btn__submit);
             this.Controls.Add(this.tbox__address);
@@ -359,5 +374,6 @@
         private System.Windows.Forms.Button btn__submit;
         private System.Windows.Forms.DateTimePicker calendar__dateselect;
         private System.Windows.Forms.Button btn__clear;
+        private System.Windows.Forms.Button btn__admin;
     }
 }

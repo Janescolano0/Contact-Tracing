@@ -65,6 +65,10 @@ namespace contact_tracing
             ClearTextBoxes();
         }
 
-
+        private void btn__admin_Click(object sender, EventArgs e)
+        {
+            form__adminlogin show = new form__adminlogin();
+            show.ShowDialog();
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace contact_tracing
 {
-    partial class admin_login_form
+    partial class form__adminlogin
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@
             this.lbl__adminlogin.AutoSize = true;
             this.lbl__adminlogin.Font = new System.Drawing.Font("Oswald", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl__adminlogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.lbl__adminlogin.Location = new System.Drawing.Point(280, 129);
+            this.lbl__adminlogin.Location = new System.Drawing.Point(281, 125);
             this.lbl__adminlogin.Name = "lbl__adminlogin";
             this.lbl__adminlogin.Size = new System.Drawing.Size(157, 65);
             this.lbl__adminlogin.TabIndex = 9;
@@ -84,7 +84,7 @@
             this.tbox__pass.Size = new System.Drawing.Size(153, 20);
             this.tbox__pass.TabIndex = 16;
             // 
-            // admin_login_form
+            // form__adminlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,7 +95,7 @@
             this.Controls.Add(this.lbl__pass);
             this.Controls.Add(this.lbl__user);
             this.Controls.Add(this.lbl__adminlogin);
-            this.Name = "admin_login_form";
+            this.Name = "form__adminlogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin LOGIN ";
             this.ResumeLayout(false);
