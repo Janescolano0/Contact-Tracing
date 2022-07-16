@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admin login form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin login form.Designer.cs">
+      <DependentUpon>admin login form.cs</DependentUpon>
+    </Compile>
     <Compile Include="contact tracing form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="admin login form.resx">
+      <DependentUpon>admin login form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="contact tracing form.resx">
       <DependentUpon>contact tracing form.cs</DependentUpon>
     </EmbeddedResource>

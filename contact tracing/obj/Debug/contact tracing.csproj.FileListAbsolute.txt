@@ -10,3 +10,4 @@ C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact trac
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.CoreCompileInputs.cache
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.exe
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.pdb
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.admin_login_form.resources
