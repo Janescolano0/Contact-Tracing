@@ -16,5 +16,11 @@ namespace contact_tracing
         {
             InitializeComponent();
         }
+
+        private void btn__form_Click(object sender, EventArgs e)
+        {
+            form__contacttracingform show = new form__contacttracingform();
+            show.ShowDialog();
+        }
     }
 }

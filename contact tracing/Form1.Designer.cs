@@ -50,7 +50,7 @@
             // 
             this.lbl__contacttracing.AutoSize = true;
             this.lbl__contacttracing.Font = new System.Drawing.Font("Oswald", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl__contacttracing.ForeColor = System.Drawing.Color.Transparent;
+            this.lbl__contacttracing.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__contacttracing.Location = new System.Drawing.Point(3, 5);
             this.lbl__contacttracing.Name = "lbl__contacttracing";
             this.lbl__contacttracing.Size = new System.Drawing.Size(454, 87);
@@ -59,13 +59,15 @@
             // 
             // btn__form
             // 
+            this.btn__form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.btn__form.Font = new System.Drawing.Font("Oswald", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn__form.Location = new System.Drawing.Point(442, 8);
             this.btn__form.Name = "btn__form";
             this.btn__form.Size = new System.Drawing.Size(180, 84);
             this.btn__form.TabIndex = 9;
             this.btn__form.Text = "Form";
-            this.btn__form.UseVisualStyleBackColor = true;
+            this.btn__form.UseVisualStyleBackColor = false;
+            this.btn__form.Click += new System.EventHandler(this.btn__form_Click);
             // 
             // form__contacttracing
             // 
@@ -75,6 +77,7 @@
             this.ClientSize = new System.Drawing.Size(755, 103);
             this.Controls.Add(this.panel1);
             this.Name = "form__contacttracing";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
