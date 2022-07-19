@@ -11,3 +11,6 @@ C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact trac
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.exe
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.pdb
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__adminlogin.resources
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__admin.resources
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__allrecs.resources
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__bydate.resources

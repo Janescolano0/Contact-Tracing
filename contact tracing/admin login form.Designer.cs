@@ -35,6 +35,7 @@
             this.tbox__pass = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn__login = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -100,14 +101,28 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(72)))), ((int)(((byte)(143)))));
+            this.panel2.Controls.Add(this.btn__login);
             this.panel2.Controls.Add(this.tbox__pass);
             this.panel2.Controls.Add(this.lbl__pass);
             this.panel2.Controls.Add(this.lbl__user);
             this.panel2.Controls.Add(this.tbox__user);
             this.panel2.Location = new System.Drawing.Point(45, 62);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(206, 180);
+            this.panel2.Size = new System.Drawing.Size(206, 194);
             this.panel2.TabIndex = 18;
+            // 
+            // btn__login
+            // 
+            this.btn__login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.btn__login.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.btn__login.Location = new System.Drawing.Point(69, 142);
+            this.btn__login.Name = "btn__login";
+            this.btn__login.Size = new System.Drawing.Size(67, 38);
+            this.btn__login.TabIndex = 31;
+            this.btn__login.Text = "LOGIN";
+            this.btn__login.UseVisualStyleBackColor = false;
+            this.btn__login.Click += new System.EventHandler(this.btn__login_Click);
             // 
             // form__adminlogin
             // 
@@ -137,5 +152,6 @@
         private System.Windows.Forms.TextBox tbox__pass;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn__login;
     }
 }

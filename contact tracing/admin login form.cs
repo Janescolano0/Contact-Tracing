@@ -16,5 +16,22 @@ namespace contact_tracing
         {
             InitializeComponent();
         }
+
+        private void btn__login_Click(object sender, EventArgs e)
+        {
+            if (tbox__user.Text == "janescolano" && tbox__pass.Text == "ganda")
+            {
+                new form__admin().Show();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Unsuccessful login attempt. Wrong username or password.");
+                tbox__user.Clear();
+                tbox__pass.Clear();
+                lbl__user.Focus();
+            }
+        }
     }
 }
