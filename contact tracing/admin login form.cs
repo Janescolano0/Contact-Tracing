@@ -27,10 +27,23 @@ namespace contact_tracing
 
             else
             {
-                MessageBox.Show("Unsuccessful login attempt. Wrong username or password.");
+                MessageBox.Show("Login failed. Please try again.");
                 tbox__user.Clear();
                 tbox__pass.Clear();
                 lbl__user.Focus();
+            }
+        }
+
+        private void cbox__showpass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbox__showpass.Checked)
+            {
+                tbox__pass.UseSystemPasswordChar = false;
+            }
+
+            else
+            {
+                tbox__pass.UseSystemPasswordChar = true;
             }
         }
     }

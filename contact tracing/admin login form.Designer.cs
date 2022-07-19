@@ -36,6 +36,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn__login = new System.Windows.Forms.Button();
+            this.cbox__showpass = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -76,17 +77,17 @@
             // tbox__user
             // 
             this.tbox__user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.tbox__user.Location = new System.Drawing.Point(27, 59);
+            this.tbox__user.Location = new System.Drawing.Point(21, 59);
             this.tbox__user.Name = "tbox__user";
-            this.tbox__user.Size = new System.Drawing.Size(153, 20);
+            this.tbox__user.Size = new System.Drawing.Size(159, 20);
             this.tbox__user.TabIndex = 15;
             // 
             // tbox__pass
             // 
             this.tbox__pass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(228)))), ((int)(((byte)(235)))));
-            this.tbox__pass.Location = new System.Drawing.Point(27, 116);
+            this.tbox__pass.Location = new System.Drawing.Point(21, 116);
             this.tbox__pass.Name = "tbox__pass";
-            this.tbox__pass.Size = new System.Drawing.Size(153, 20);
+            this.tbox__pass.Size = new System.Drawing.Size(159, 20);
             this.tbox__pass.TabIndex = 16;
             // 
             // panel1
@@ -101,6 +102,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(72)))), ((int)(((byte)(143)))));
+            this.panel2.Controls.Add(this.cbox__showpass);
             this.panel2.Controls.Add(this.btn__login);
             this.panel2.Controls.Add(this.tbox__pass);
             this.panel2.Controls.Add(this.lbl__pass);
@@ -116,13 +118,26 @@
             this.btn__login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
             this.btn__login.Font = new System.Drawing.Font("Oswald", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn__login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.btn__login.Location = new System.Drawing.Point(69, 142);
+            this.btn__login.Location = new System.Drawing.Point(21, 142);
             this.btn__login.Name = "btn__login";
             this.btn__login.Size = new System.Drawing.Size(67, 38);
             this.btn__login.TabIndex = 31;
             this.btn__login.Text = "LOGIN";
             this.btn__login.UseVisualStyleBackColor = false;
             this.btn__login.Click += new System.EventHandler(this.btn__login_Click);
+            // 
+            // cbox__showpass
+            // 
+            this.cbox__showpass.AutoSize = true;
+            this.cbox__showpass.Font = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox__showpass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.cbox__showpass.Location = new System.Drawing.Point(94, 142);
+            this.cbox__showpass.Name = "cbox__showpass";
+            this.cbox__showpass.Size = new System.Drawing.Size(112, 24);
+            this.cbox__showpass.TabIndex = 32;
+            this.cbox__showpass.Text = "Show Password";
+            this.cbox__showpass.UseVisualStyleBackColor = true;
+            this.cbox__showpass.CheckedChanged += new System.EventHandler(this.cbox__showpass_CheckedChanged);
             // 
             // form__adminlogin
             // 
@@ -153,5 +168,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn__login;
+        private System.Windows.Forms.CheckBox cbox__showpass;
     }
 }
