@@ -21,8 +21,8 @@ namespace contact_tracing
         {
             if (tbox__user.Text == "janescolano" && tbox__pass.Text == "ganda")
             {
-                new form__admin().Show();
-                this.Hide();
+                form__admin show = new form__admin();
+                show.ShowDialog();
             }
 
             else
