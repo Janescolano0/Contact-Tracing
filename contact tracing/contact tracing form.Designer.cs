@@ -61,6 +61,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox__camera)).BeginInit();
             this.SuspendLayout();
@@ -324,11 +325,11 @@
             this.tbox__viewinfo.AcceptsReturn = true;
             this.tbox__viewinfo.AcceptsTab = true;
             this.tbox__viewinfo.BackColor = System.Drawing.Color.Navy;
+            this.tbox__viewinfo.Font = new System.Drawing.Font("News Cycle", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbox__viewinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.tbox__viewinfo.Location = new System.Drawing.Point(36, 466);
             this.tbox__viewinfo.Multiline = true;
             this.tbox__viewinfo.Name = "tbox__viewinfo";
-            this.tbox__viewinfo.ReadOnly = true;
             this.tbox__viewinfo.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.tbox__viewinfo.Size = new System.Drawing.Size(410, 247);
             this.tbox__viewinfo.TabIndex = 30;
@@ -395,11 +396,19 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.label3.Location = new System.Drawing.Point(33, 442);
+            this.label3.Location = new System.Drawing.Point(448, 466);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 21);
             this.label3.TabIndex = 36;
             this.label3.Text = "QR Code Info";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(36, 439);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(410, 21);
+            this.comboBox1.TabIndex = 37;
             // 
             // form__contacttracingform
             // 
@@ -408,6 +417,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(1240, 758);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -482,5 +492,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
