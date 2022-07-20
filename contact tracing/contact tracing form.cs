@@ -79,6 +79,8 @@ namespace contact_tracing
 
         private void btn__startcam_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Starting camera...", "QR Code", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             captureDevice = new VideoCaptureDevice(filter[cbox__camera.SelectedIndex].MonikerString);
             captureDevice.NewFrame += CaptureDevie_NewFrame;
             captureDevice.Start();

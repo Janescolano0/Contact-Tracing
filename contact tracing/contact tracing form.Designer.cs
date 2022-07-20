@@ -327,7 +327,6 @@
             // 
             this.tbox__viewinfo.AcceptsReturn = true;
             this.tbox__viewinfo.AcceptsTab = true;
-            this.tbox__viewinfo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.tbox__viewinfo.BackColor = System.Drawing.Color.Navy;
             this.tbox__viewinfo.Font = new System.Drawing.Font("News Cycle", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbox__viewinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
