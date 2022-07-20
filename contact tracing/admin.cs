@@ -22,7 +22,7 @@ namespace contact_tracing
         {
             List<string> alldates = new List<string>();
             string date = __datepick.Text;
-            int selecteddate = 0;
+            int list = 0;
             var files = Directory.EnumerateFiles(@"C:\Users\joy\source\repos\contact tracing\data\all records");
             foreach (string file in files)
             {
@@ -30,11 +30,11 @@ namespace contact_tracing
                 if (content.Contains(date))
                 {
                     alldates.Add(content);
-                    selecteddate++;
+                    list++;
                     continue;
                 }
             }
-            if (selecteddate == 0)
+            if (list == 0)
             {
                 MessageBox.Show("Searching records...");
                 MessageBox.Show("No records on the selected date");
@@ -50,12 +50,13 @@ namespace contact_tracing
                 file.Close();
 
                 MessageBox.Show("Searching records...");
-                MessageBox.Show("There are " + selecteddate + " record(s) on the selected date");
+                MessageBox.Show("There are " + list + " record(s) on the selected date");
                 
                 if (MessageBox.Show("Proceed to view the records?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     MessageBox.Show("Sorting out...");
                     MessageBox.Show("Success");
+
                     form__bydate viewrecords = new form__bydate();
                     viewrecords.ShowDialog();
                 }
