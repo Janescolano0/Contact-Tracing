@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form__contacttracingform));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn__admin = new System.Windows.Forms.Button();
+            this.calendar__dateselect = new System.Windows.Forms.DateTimePicker();
             this.lbl__contacttracingform = new System.Windows.Forms.Label();
             this.lbl__personaldeets = new System.Windows.Forms.Label();
             this.lbl__last = new System.Windows.Forms.Label();
@@ -50,10 +53,16 @@
             this.lbl__address = new System.Windows.Forms.Label();
             this.tbox__address = new System.Windows.Forms.TextBox();
             this.btn__submit = new System.Windows.Forms.Button();
-            this.calendar__dateselect = new System.Windows.Forms.DateTimePicker();
             this.btn__clear = new System.Windows.Forms.Button();
-            this.btn__admin = new System.Windows.Forms.Button();
+            this.tbox__viewinfo = new System.Windows.Forms.TextBox();
+            this.pbox__camera = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox__camera)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +77,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1240, 100);
             this.panel1.TabIndex = 8;
+            // 
+            // btn__admin
+            // 
+            this.btn__admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.btn__admin.Font = new System.Drawing.Font("Oswald", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.btn__admin.Location = new System.Drawing.Point(1095, 5);
+            this.btn__admin.Name = "btn__admin";
+            this.btn__admin.Size = new System.Drawing.Size(133, 92);
+            this.btn__admin.TabIndex = 30;
+            this.btn__admin.Text = "ADMIN";
+            this.btn__admin.UseVisualStyleBackColor = false;
+            this.btn__admin.Click += new System.EventHandler(this.btn__admin_Click);
+            // 
+            // calendar__dateselect
+            // 
+            this.calendar__dateselect.CalendarFont = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar__dateselect.Font = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calendar__dateselect.Location = new System.Drawing.Point(834, 33);
+            this.calendar__dateselect.Name = "calendar__dateselect";
+            this.calendar__dateselect.Size = new System.Drawing.Size(232, 28);
+            this.calendar__dateselect.TabIndex = 29;
             // 
             // lbl__contacttracingform
             // 
@@ -275,15 +306,6 @@
             this.btn__submit.UseVisualStyleBackColor = false;
             this.btn__submit.Click += new System.EventHandler(this.button1_Click);
             // 
-            // calendar__dateselect
-            // 
-            this.calendar__dateselect.CalendarFont = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendar__dateselect.Font = new System.Drawing.Font("Oswald", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calendar__dateselect.Location = new System.Drawing.Point(834, 33);
-            this.calendar__dateselect.Name = "calendar__dateselect";
-            this.calendar__dateselect.Size = new System.Drawing.Size(232, 28);
-            this.calendar__dateselect.TabIndex = 29;
-            // 
             // btn__clear
             // 
             this.btn__clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
@@ -297,25 +319,102 @@
             this.btn__clear.UseVisualStyleBackColor = false;
             this.btn__clear.Click += new System.EventHandler(this.btn__clear_Click);
             // 
-            // btn__admin
+            // tbox__viewinfo
             // 
-            this.btn__admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.btn__admin.Font = new System.Drawing.Font("Oswald", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn__admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.btn__admin.Location = new System.Drawing.Point(1095, 5);
-            this.btn__admin.Name = "btn__admin";
-            this.btn__admin.Size = new System.Drawing.Size(133, 92);
-            this.btn__admin.TabIndex = 30;
-            this.btn__admin.Text = "ADMIN";
-            this.btn__admin.UseVisualStyleBackColor = false;
-            this.btn__admin.Click += new System.EventHandler(this.btn__admin_Click);
+            this.tbox__viewinfo.AcceptsReturn = true;
+            this.tbox__viewinfo.AcceptsTab = true;
+            this.tbox__viewinfo.BackColor = System.Drawing.Color.Navy;
+            this.tbox__viewinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.tbox__viewinfo.Location = new System.Drawing.Point(36, 466);
+            this.tbox__viewinfo.Multiline = true;
+            this.tbox__viewinfo.Name = "tbox__viewinfo";
+            this.tbox__viewinfo.ReadOnly = true;
+            this.tbox__viewinfo.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.tbox__viewinfo.Size = new System.Drawing.Size(410, 247);
+            this.tbox__viewinfo.TabIndex = 30;
+            // 
+            // pbox__camera
+            // 
+            this.pbox__camera.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbox__camera.BackgroundImage")));
+            this.pbox__camera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbox__camera.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pbox__camera.Location = new System.Drawing.Point(897, 427);
+            this.pbox__camera.Name = "pbox__camera";
+            this.pbox__camera.Size = new System.Drawing.Size(291, 286);
+            this.pbox__camera.TabIndex = 31;
+            this.pbox__camera.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.button1.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.button1.Location = new System.Drawing.Point(770, 427);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 48);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Start";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.button2.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.button2.Location = new System.Drawing.Point(452, 665);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 48);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Fill";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.label1.Location = new System.Drawing.Point(29, 372);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 40);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "QR Code";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.label2.Location = new System.Drawing.Point(893, 403);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 21);
+            this.label2.TabIndex = 35;
+            this.label2.Text = "Scan QR Code";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.label3.Location = new System.Drawing.Point(33, 442);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 21);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "QR Code Info";
             // 
             // form__contacttracingform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
-            this.ClientSize = new System.Drawing.Size(1240, 355);
+            this.ClientSize = new System.Drawing.Size(1240, 758);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pbox__camera);
+            this.Controls.Add(this.tbox__viewinfo);
             this.Controls.Add(this.btn__clear);
             this.Controls.Add(this.btn__submit);
             this.Controls.Add(this.tbox__address);
@@ -343,6 +442,7 @@
             this.Text = "Contact Tracing Form";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox__camera)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,5 +475,12 @@
         private System.Windows.Forms.DateTimePicker calendar__dateselect;
         private System.Windows.Forms.Button btn__clear;
         private System.Windows.Forms.Button btn__admin;
+        private System.Windows.Forms.TextBox tbox__viewinfo;
+        private System.Windows.Forms.PictureBox pbox__camera;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
