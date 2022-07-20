@@ -56,12 +56,13 @@
             this.btn__clear = new System.Windows.Forms.Button();
             this.tbox__viewinfo = new System.Windows.Forms.TextBox();
             this.pbox__camera = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn__startcam = new System.Windows.Forms.Button();
+            this.btn__autofill = new System.Windows.Forms.Button();
+            this.lbl__qrcode = new System.Windows.Forms.Label();
+            this.lbl__qrcodescan = new System.Windows.Forms.Label();
+            this.lbl__infoqrcode = new System.Windows.Forms.Label();
+            this.cbox__camera = new System.Windows.Forms.ComboBox();
+            this.lbl__camera = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox__camera)).BeginInit();
             this.SuspendLayout();
@@ -345,70 +346,84 @@
             this.pbox__camera.TabIndex = 31;
             this.pbox__camera.TabStop = false;
             // 
-            // button1
+            // btn__startcam
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.button1.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.button1.Location = new System.Drawing.Point(770, 427);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 48);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn__startcam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.btn__startcam.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__startcam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.btn__startcam.Location = new System.Drawing.Point(770, 427);
+            this.btn__startcam.Name = "btn__startcam";
+            this.btn__startcam.Size = new System.Drawing.Size(121, 48);
+            this.btn__startcam.TabIndex = 32;
+            this.btn__startcam.Text = "Start";
+            this.btn__startcam.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn__autofill
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
-            this.button2.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.button2.Location = new System.Drawing.Point(452, 665);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 48);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Fill";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn__autofill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
+            this.btn__autofill.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__autofill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.btn__autofill.Location = new System.Drawing.Point(452, 665);
+            this.btn__autofill.Name = "btn__autofill";
+            this.btn__autofill.Size = new System.Drawing.Size(121, 48);
+            this.btn__autofill.TabIndex = 33;
+            this.btn__autofill.Text = "Fill";
+            this.btn__autofill.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lbl__qrcode
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.label1.Location = new System.Drawing.Point(29, 372);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 40);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "QR Code";
+            this.lbl__qrcode.AutoSize = true;
+            this.lbl__qrcode.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl__qrcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.lbl__qrcode.Location = new System.Drawing.Point(29, 372);
+            this.lbl__qrcode.Name = "lbl__qrcode";
+            this.lbl__qrcode.Size = new System.Drawing.Size(117, 40);
+            this.lbl__qrcode.TabIndex = 34;
+            this.lbl__qrcode.Text = "QR Code";
             // 
-            // label2
+            // lbl__qrcodescan
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.label2.Location = new System.Drawing.Point(893, 403);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 21);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Scan QR Code";
+            this.lbl__qrcodescan.AutoSize = true;
+            this.lbl__qrcodescan.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl__qrcodescan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.lbl__qrcodescan.Location = new System.Drawing.Point(893, 403);
+            this.lbl__qrcodescan.Name = "lbl__qrcodescan";
+            this.lbl__qrcodescan.Size = new System.Drawing.Size(101, 21);
+            this.lbl__qrcodescan.TabIndex = 35;
+            this.lbl__qrcodescan.Text = "Scan QR Code";
             // 
-            // label3
+            // lbl__infoqrcode
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.label3.Location = new System.Drawing.Point(448, 466);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 21);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "QR Code Info";
+            this.lbl__infoqrcode.AutoSize = true;
+            this.lbl__infoqrcode.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl__infoqrcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.lbl__infoqrcode.Location = new System.Drawing.Point(452, 468);
+            this.lbl__infoqrcode.Name = "lbl__infoqrcode";
+            this.lbl__infoqrcode.Size = new System.Drawing.Size(96, 21);
+            this.lbl__infoqrcode.TabIndex = 36;
+            this.lbl__infoqrcode.Text = "QR Code Info";
             // 
-            // comboBox1
+            // cbox__camera
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(36, 439);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(410, 21);
-            this.comboBox1.TabIndex = 37;
+            this.cbox__camera.BackColor = System.Drawing.Color.Navy;
+            this.cbox__camera.Font = new System.Drawing.Font("News Cycle", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbox__camera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.cbox__camera.FormattingEnabled = true;
+            this.cbox__camera.Location = new System.Drawing.Point(36, 427);
+            this.cbox__camera.Name = "cbox__camera";
+            this.cbox__camera.Size = new System.Drawing.Size(410, 27);
+            this.cbox__camera.TabIndex = 37;
+            // 
+            // lbl__camera
+            // 
+            this.lbl__camera.AutoSize = true;
+            this.lbl__camera.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl__camera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
+            this.lbl__camera.Location = new System.Drawing.Point(385, 403);
+            this.lbl__camera.Name = "lbl__camera";
+            this.lbl__camera.Size = new System.Drawing.Size(61, 21);
+            this.lbl__camera.TabIndex = 38;
+            this.lbl__camera.Text = "Camera";
             // 
             // form__contacttracingform
             // 
@@ -417,12 +432,13 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(17)))), ((int)(((byte)(37)))));
             this.ClientSize = new System.Drawing.Size(1240, 758);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbl__camera);
+            this.Controls.Add(this.cbox__camera);
+            this.Controls.Add(this.lbl__infoqrcode);
+            this.Controls.Add(this.lbl__qrcodescan);
+            this.Controls.Add(this.lbl__qrcode);
+            this.Controls.Add(this.btn__autofill);
+            this.Controls.Add(this.btn__startcam);
             this.Controls.Add(this.pbox__camera);
             this.Controls.Add(this.tbox__viewinfo);
             this.Controls.Add(this.btn__clear);
@@ -487,11 +503,12 @@
         private System.Windows.Forms.Button btn__admin;
         private System.Windows.Forms.TextBox tbox__viewinfo;
         private System.Windows.Forms.PictureBox pbox__camera;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btn__startcam;
+        private System.Windows.Forms.Button btn__autofill;
+        private System.Windows.Forms.Label lbl__qrcode;
+        private System.Windows.Forms.Label lbl__qrcodescan;
+        private System.Windows.Forms.Label lbl__infoqrcode;
+        private System.Windows.Forms.ComboBox cbox__camera;
+        private System.Windows.Forms.Label lbl__camera;
     }
 }
