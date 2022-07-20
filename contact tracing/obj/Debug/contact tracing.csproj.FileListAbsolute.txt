@@ -14,3 +14,14 @@ C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_trac
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__admin.resources
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__allrecs.resources
 C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact_tracing.form__bydate.resources
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\AForge.dll
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\AForge.Video.dll
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\zxing.dll
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\zxing.presentation.dll
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\AForge.xml
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\AForge.Video.xml
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\zxing.xml
+C:\Users\joy\source\repos\contact tracing\contact tracing\bin\Debug\zxing.presentation.xml
+C:\Users\joy\source\repos\contact tracing\contact tracing\obj\Debug\contact tracing.csproj.CopyComplete

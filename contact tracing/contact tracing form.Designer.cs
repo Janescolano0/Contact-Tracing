@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(form__contacttracingform));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn__admin = new System.Windows.Forms.Button();
@@ -63,6 +64,7 @@
             this.lbl__infoqrcode = new System.Windows.Forms.Label();
             this.cbox__camera = new System.Windows.Forms.ComboBox();
             this.lbl__camera = new System.Windows.Forms.Label();
+            this.cameratimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox__camera)).BeginInit();
             this.SuspendLayout();
@@ -325,6 +327,7 @@
             // 
             this.tbox__viewinfo.AcceptsReturn = true;
             this.tbox__viewinfo.AcceptsTab = true;
+            this.tbox__viewinfo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.tbox__viewinfo.BackColor = System.Drawing.Color.Navy;
             this.tbox__viewinfo.Font = new System.Drawing.Font("News Cycle", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbox__viewinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
@@ -351,12 +354,13 @@
             this.btn__startcam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
             this.btn__startcam.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn__startcam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.btn__startcam.Location = new System.Drawing.Point(770, 427);
+            this.btn__startcam.Location = new System.Drawing.Point(770, 665);
             this.btn__startcam.Name = "btn__startcam";
             this.btn__startcam.Size = new System.Drawing.Size(121, 48);
             this.btn__startcam.TabIndex = 32;
             this.btn__startcam.Text = "Start";
             this.btn__startcam.UseVisualStyleBackColor = false;
+            this.btn__startcam.Click += new System.EventHandler(this.btn__startcam_Click);
             // 
             // btn__autofill
             // 
@@ -386,7 +390,7 @@
             this.lbl__qrcodescan.AutoSize = true;
             this.lbl__qrcodescan.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl__qrcodescan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.lbl__qrcodescan.Location = new System.Drawing.Point(893, 403);
+            this.lbl__qrcodescan.Location = new System.Drawing.Point(790, 468);
             this.lbl__qrcodescan.Name = "lbl__qrcodescan";
             this.lbl__qrcodescan.Size = new System.Drawing.Size(101, 21);
             this.lbl__qrcodescan.TabIndex = 35;
@@ -409,9 +413,9 @@
             this.cbox__camera.Font = new System.Drawing.Font("News Cycle", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbox__camera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.cbox__camera.FormattingEnabled = true;
-            this.cbox__camera.Location = new System.Drawing.Point(36, 427);
+            this.cbox__camera.Location = new System.Drawing.Point(897, 397);
             this.cbox__camera.Name = "cbox__camera";
-            this.cbox__camera.Size = new System.Drawing.Size(410, 27);
+            this.cbox__camera.Size = new System.Drawing.Size(291, 27);
             this.cbox__camera.TabIndex = 37;
             // 
             // lbl__camera
@@ -419,11 +423,16 @@
             this.lbl__camera.AutoSize = true;
             this.lbl__camera.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl__camera.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.lbl__camera.Location = new System.Drawing.Point(385, 403);
+            this.lbl__camera.Location = new System.Drawing.Point(830, 399);
             this.lbl__camera.Name = "lbl__camera";
             this.lbl__camera.Size = new System.Drawing.Size(61, 21);
             this.lbl__camera.TabIndex = 38;
             this.lbl__camera.Text = "Camera";
+            // 
+            // cameratimer
+            // 
+            this.cameratimer.Interval = 1000;
+            this.cameratimer.Tick += new System.EventHandler(this.cameratimer_Tick);
             // 
             // form__contacttracingform
             // 
@@ -466,6 +475,8 @@
             this.Name = "form__contacttracingform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact Tracing Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.form__contacttracingform_FormClosing);
+            this.Load += new System.EventHandler(this.form__contacttracingform_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbox__camera)).EndInit();
@@ -510,5 +521,6 @@
         private System.Windows.Forms.Label lbl__infoqrcode;
         private System.Windows.Forms.ComboBox cbox__camera;
         private System.Windows.Forms.Label lbl__camera;
+        private System.Windows.Forms.Timer cameratimer;
     }
 }
