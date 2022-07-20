@@ -37,7 +37,7 @@ namespace contact_tracing
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\joy\source\repos\contact tracing\data\" + tbox__last.Text + ", " + tbox__first.Text + ", " + tbox__middle.Text + ".txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\joy\source\repos\contact tracing\data\all records" + tbox__last.Text + ", " + tbox__first.Text + ", " + tbox__middle.Text + ".txt", true);
 
             file.WriteLine("");
             file.WriteLine("Personal Details");
