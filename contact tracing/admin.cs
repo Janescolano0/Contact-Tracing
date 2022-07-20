@@ -56,12 +56,21 @@ namespace contact_tracing
                 {
                     MessageBox.Show("Sorting out...");
                     MessageBox.Show("Success");
-                    form__bydate view = new form__bydate();
-                    view.ShowDialog();
+                    form__bydate viewrecords = new form__bydate();
+                    viewrecords.ShowDialog();
                 }
                 
             }
 
+        }
+
+        private void btn__open_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Searching records...");
+            MessageBox.Show("View all?");
+            MessageBox.Show("Loading...");
+            form__allrecs viewallrecs = new form__allrecs();
+            viewallrecs.ShowDialog();
         }
     }
 }
