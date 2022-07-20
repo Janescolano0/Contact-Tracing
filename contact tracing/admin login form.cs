@@ -19,7 +19,7 @@ namespace contact_tracing
 
         private void btn__login_Click(object sender, EventArgs e)
         {
-            if (tbox__user.Text == "janescolano" && tbox__pass.Text == "ganda")
+            if (tbox__user.Text == "janescolano" && tbox__pass.Text == "1010")
             {
                 form__admin show = new form__admin();
                 show.ShowDialog();

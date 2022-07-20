@@ -16,5 +16,10 @@ namespace contact_tracing
         {
             InitializeComponent();
         }
+
+        private void lbl__recs_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

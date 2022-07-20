@@ -35,11 +35,11 @@
             // lbl__underscore
             // 
             this.lbl__underscore.AutoSize = true;
-            this.lbl__underscore.Font = new System.Drawing.Font("Oswald", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl__underscore.Font = new System.Drawing.Font("Oswald Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl__underscore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
             this.lbl__underscore.Location = new System.Drawing.Point(13, 51);
             this.lbl__underscore.Name = "lbl__underscore";
-            this.lbl__underscore.Size = new System.Drawing.Size(960, 21);
+            this.lbl__underscore.Size = new System.Drawing.Size(1150, 21);
             this.lbl__underscore.TabIndex = 14;
             this.lbl__underscore.Text = "_________________________________________________________________________________" +
     "________________________________________________________________________________" +
@@ -62,6 +62,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(19)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(1002, 450);
             this.Controls.Add(this.lbl__underscore);
@@ -69,6 +70,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "form__bydate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Records (by date)";
             this.ResumeLayout(false);
             this.PerformLayout();

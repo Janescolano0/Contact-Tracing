@@ -42,6 +42,7 @@
             this.lbl__recs.Size = new System.Drawing.Size(84, 29);
             this.lbl__recs.TabIndex = 11;
             this.lbl__recs.Text = "Records";
+            this.lbl__recs.Click += new System.EventHandler(this.lbl__recs_Click);
             // 
             // lbl__underscore
             // 

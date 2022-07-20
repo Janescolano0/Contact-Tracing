@@ -63,9 +63,10 @@
             // 
             // __datepick
             // 
+            this.@__datepick.Font = new System.Drawing.Font("Oswald", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.@__datepick.Location = new System.Drawing.Point(30, 109);
             this.@__datepick.Name = "__datepick";
-            this.@__datepick.Size = new System.Drawing.Size(200, 20);
+            this.@__datepick.Size = new System.Drawing.Size(200, 25);
             this.@__datepick.TabIndex = 17;
             // 
             // lbl__records
@@ -96,12 +97,13 @@
             this.btn__select.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(65)))), ((int)(((byte)(96)))));
             this.btn__select.Font = new System.Drawing.Font("Oswald", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn__select.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(206)))), ((int)(((byte)(218)))));
-            this.btn__select.Location = new System.Drawing.Point(65, 135);
+            this.btn__select.Location = new System.Drawing.Point(65, 140);
             this.btn__select.Name = "btn__select";
             this.btn__select.Size = new System.Drawing.Size(128, 58);
             this.btn__select.TabIndex = 31;
             this.btn__select.Text = "Select";
             this.btn__select.UseVisualStyleBackColor = false;
+            this.btn__select.Click += new System.EventHandler(this.btn__select_Click);
             // 
             // form__admin
             // 
