@@ -372,6 +372,7 @@
             this.btn__autofill.TabIndex = 33;
             this.btn__autofill.Text = "Fill";
             this.btn__autofill.UseVisualStyleBackColor = false;
+            this.btn__autofill.Click += new System.EventHandler(this.btn__autofill_Click);
             // 
             // lbl__qrcode
             // 

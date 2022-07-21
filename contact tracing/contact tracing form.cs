@@ -122,5 +122,20 @@ namespace contact_tracing
                 }
             }
         }
+
+        private void btn__autofill_Click(object sender, EventArgs e)
+        {
+            string myString = tbox__viewinfo.Text;
+            string[] str = myString.Split(';');
+            tbox__first.Text = str[0].Substring(str[0].IndexOf(':') + 1);
+            tbox__middle.Text = str[1].Substring(str[1].IndexOf(':') + 1);
+            tbox__last.Text = str[2].Substring(str[2].IndexOf(':') + 1);
+            tbox__age.Text = str[3].Substring(str[3].IndexOf(':') + 1);
+            tbox__birth.Text = str[4].Substring(str[4].IndexOf(':') + 1);
+            tbox__gender.Text = str[5].Substring(str[5].IndexOf(':') + 1);
+            tbox__contact.Text = str[6].Substring(str[6].IndexOf(':') + 1);
+            tbox__email.Text = str[7].Substring(str[7].IndexOf(':') + 1);
+            tbox__address.Text = str[8].Substring(str[8].IndexOf(':') + 1);
+        }
     }
 }
